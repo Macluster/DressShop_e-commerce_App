@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BasePage">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/TopBarFrame"
+        android:background="@color/white"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/MenuBtn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/list"
+                android:scaleType="fitCenter"
+                android:backgroundTint="#0000ffff"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/CartBtn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/cart"
+                android:scaleType="fitCenter"
+                android:backgroundTint="#0000ffff"
+                />
+            <ImageButton
+                android:id="@+id/NotificationBtn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/notification"
+                android:scaleType="fitCenter"
+                android:backgroundTint="#0000ffff"
+                app:layout_constraintRight_toLeftOf="@id/CartBtn"
+
+
+                />
+
+           <FrameLayout
+               android:layout_width="190dp"
+               android:layout_height="50dp"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintLeft_toRightOf="@id/MenuBtn"
+               app:layout_constraintRight_toLeftOf="@id/NotificationBtn"
+
+               android:layout_marginTop="5dp"
+
+
+
+               android:background="#F3F2F2">
+
+               <EditText
+                   android:layout_width="190dp"
+                   android:layout_height="50dp"
+                   android:textColorHint="#6B7AA1"
+                   android:textColor="@color/black"
+                   android:hint="Search"
+                   android:background="#F3F2F2"
+                   android:layout_marginLeft="20dp"
+
+                   />
+           </FrameLayout>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/ContentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        apptolayout_constraintTop_toBottomOf="@id/TopBarFrame"
+        app:layout_constraintBottom_toTopOf="@+id/BottomBarFrame"
+
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="50dp"
+
+        />
+
+
+
+
+    <FrameLayout
+        android:id="@+id/BottomBarFrame"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/white"
+
+        >
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           >
+          <ImageButton
+              android:id="@+id/homeBtn"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintLeft_toLeftOf="parent"
+              android:layout_marginLeft="20dp"
+              android:src="@drawable/home"
+              android:scaleType="fitCenter"
+              android:background="#0000ffff"
+
+
+              />
+
+           <ImageButton
+               android:id="@+id/UserBtn"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+               android:layout_marginRight="20dp"
+               android:src="@drawable/user"
+               android:scaleType="fitCenter"
+               android:background="#0000ffff"
+
+               />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

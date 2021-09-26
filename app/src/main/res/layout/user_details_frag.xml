@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserDetailsFrag">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <TextView
+          android:text="User Details"
+          android:textAlignment="center"
+          android:textSize="30dp"
+          android:layout_width="300dp"
+          android:layout_height="50dp"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="5dp"
+          >
+
+      </TextView>
+
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="150dp"
+          android:layout_height="150dp"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:layout_marginTop="100dp"
+          app:cardCornerRadius="75dp">
+
+          <ImageView
+              android:id="@+id/UserImageView"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+
+              android:src="@drawable/temp"
+              android:scaleType="centerCrop"
+
+              />
+
+
+
+      </androidx.cardview.widget.CardView>
+
+
+      <EditText
+          android:id="@+id/UserNameEditText"
+          android:hint="Full Name"
+          android:textColorHint="#6B7AA1"
+          android:textColor="@color/black"
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          android:layout_marginTop="300dp"
+
+          />
+      <EditText
+          android:id="@+id/UserNumberEditText"
+          android:hint="Phone Number"
+          android:textColorHint="#6B7AA1"
+          android:textColor="@color/black"
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          android:layout_marginTop="360dp"
+
+          />
+
+      <EditText
+          android:id="@+id/UserEmailEditText"
+          android:hint="Email"
+          android:textColorHint="#6B7AA1"
+          android:textColor="@color/black"
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          android:layout_marginTop="420dp"
+
+          />
+      <EditText
+          android:id="@+id/UserAdressEditText"
+          android:hint="Adress"
+          android:textColorHint="#6B7AA1"
+          android:textColor="@color/black"
+          android:layout_width="300dp"
+          android:layout_height="70dp"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+          android:layout_marginTop="480dp"
+          android:gravity="top"
+
+
+          />
+
+
+
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
